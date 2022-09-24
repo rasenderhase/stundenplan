@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+}
+
+#template {
+    display: none;
+}
+
+.stunde {
+    text-align: center;
+}
+
+.mathe {
+    background-color: cornflowerblue;
+}
+
+.deutsch {
+    background-color: coral;
+}
+
+.englisch {
+    background-color: khaki;
+}
+
+.sport {
+    background-color: aqua;
+}
+
+.bk {
+    background-color: darkolivegreen;
+}
+
+.sozialkunde {
+    background-color: blueviolet;
+}
+
+.musik {
+    background-color: lightpink;
+}
+
+.ethik, .religion {
+    background-color: darkmagenta;
+}
+
+.bnt {
+    background-color: brown;
+}
+
+.schwimmen-bnt {
+    background-image: linear-gradient(0.25turn, deepskyblue, brown);
+}
+
+.kl {
+    background-color: greenyellow;
+}
+
+.geo {
+    background-color: seagreen;
+}
+
+.x {
+    background-color: cornflowerblue;
+}
+
+.perle {
+    background-color: orange;
+}
+
+.themenangebot {
+    background-color: cyan;
+}
+
+.klassenzeit {
+    background-color: violet;
+}

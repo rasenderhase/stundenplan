@@ -1,0 +1,306 @@
+[
+  {
+    "id": "stundenplan-1",
+    "name": "Tom",
+    "days": [
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag"
+    ],
+    "times": [
+      "07:50 - 08:35",
+      "08:35 - 09:20",
+      "09:40 - 10:25",
+      "10:25 - 11:10",
+      "11:30 - 12:15",
+      "12:15 - 13:00",
+      "13:10 - 13:55",
+      "14:00 - 14:45",
+      "14:50 - 15:35",
+      "15:40 - 16:25"
+    ],
+    "timetable": [
+      [
+        {
+          "title": "Mathe",
+          "rowspan": 2
+        },
+        {
+          "title": "Englisch",
+          "rowspan": 2
+        },
+        {
+          "title": "Deutsch",
+          "rowspan": 2
+        },
+        {
+          "title": "Musik",
+          "rowspan": 2
+        },
+        {
+          "title": "Geo",
+          "rowspan": 2
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        {
+          "title": "BK",
+          "rowspan": 2
+        },
+        {
+          "title": "Sport",
+          "rowspan": 2
+        },
+        {
+          "title": "Englisch",
+          "rowspan": 2
+        },
+        {
+          "title": "Ethik",
+          "rowspan": 2
+        },
+        {
+          "title": "Deutsch",
+          "rowspan": 2
+        }
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        {
+          "title": "Englisch"
+        },
+        {
+          "title": "Mathe"
+        },
+        {
+          "title": "Kl"
+        },
+        {
+          "title": "Englisch"
+        },
+        {
+          "title": "BNT",
+          "rowspan": 2
+        }
+      ],
+      [
+        {},
+        {
+          "title": "Sozialkunde"
+        },
+        {},
+        {},
+        null
+      ],
+      [
+        {
+          "title": "Sport",
+          "rowspan": 2
+        },
+        {},
+        {},
+        {
+          "title": "Schwimmen-BNT",
+          "rowspan": 2
+        },
+        {}
+      ],
+      [
+        null,
+        {},
+        {},
+        null,
+        {}
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "title": "Mathe"
+        },
+        {}
+      ]
+    ]
+  },
+  {
+    "id": "stundenplan-2",
+    "name": "Ben",
+    "days": [
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag"
+    ],
+    "times": [
+      "08:00 - 08:45",
+      "08:45 - 09:30",
+      "09:55 - 10:40",
+      "10:40 - 11:25",
+      "11:45 - 12:30",
+      "12:30 - 13:15",
+      "14:30 - 15:15",
+      "15:15 - 16:00"
+    ],
+    "timetable": []
+  },
+  {
+    "id": "stundenplan-3",
+    "name": "Rea",
+    "days": [
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag"
+    ],
+    "times": [
+      "08:00 - 08:45",
+      "08:45 - 09:30",
+      "09:55 - 10:40",
+      "10:40 - 11:25",
+      "11:45 - 12:30",
+      "12:30 - 13:15",
+      "14:30 - 15:15",
+      "15:15 - 16:00"
+    ],
+    "timetable": [
+      [
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "Sport",
+          "rowspan": 2
+        }
+      ],
+      [
+        {
+          "title": "Sport"
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        },
+        null
+      ],
+      [
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "Religion",
+          "rowspan": 2
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        }
+      ],
+      [
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        },
+        null,
+        {
+          "title": "x"
+        },
+        {
+          "title": "x"
+        }
+      ],
+      [
+        {
+          "title": "x"
+        },
+        {
+          "title": "Musik"
+        },
+        {
+          "title": "x"
+        },
+        {
+          "title": "Perle"
+        },
+        {
+          "title": "x"
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "title": "Perle"
+        },
+        {},
+        {
+          "title": "x"
+        }
+      ],
+      [
+        {
+          "title": "Perle",
+          "rowspan": 2
+        },
+        {
+          "title": "Themenangebot",
+          "rowspan": 2
+        },
+        {
+          "title": "Themenangebot",
+          "rowspan": 2
+        },
+        {
+          "title": "Klassenzeit",
+          "rowspan": 2
+        },
+        {}
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        {}
+      ]
+    ]
+  }
+]
