@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 #template {
@@ -7,6 +8,20 @@ body {
 }
 
 .stunde {
+    width: 4em;
+    text-align: center;
+}
+
+.zeit {
+    width: 8em;
+}
+
+.day {
+    width: 8em;
+}
+
+.subject {
+    padding: 0.2em;
     text-align: center;
 }
 
@@ -39,6 +54,7 @@ body {
 }
 
 .ethik, .religion {
+    color: white;
     background-color: darkmagenta;
 }
 
@@ -72,4 +88,8 @@ body {
 
 .klassenzeit {
     background-color: violet;
+}
+
+.attribute {
+    font: 8px serif;
 }

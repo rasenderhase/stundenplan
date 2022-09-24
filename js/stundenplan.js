@@ -9,6 +9,7 @@ let stundenplan = {
         let headRow = template.querySelectorAll("thead tr")[0];
         for (const day of json.days) {
             let th = document.createElement("th");
+            th.setAttribute("class", "day")
             th.append(day);
             headRow.append(th);
         }
@@ -21,7 +22,7 @@ let stundenplan = {
                 } else if (subject.title) {
                     let td = document.createElement("td");
                     let styleclass = subject.title.toLowerCase();
-                    td.setAttribute("class", styleclass);
+                    td.setAttribute("class", "subject " + styleclass);
                     td.append(subject.title);
                     if (subject.rowspan) {
                         td.setAttribute("rowspan", subject.rowspan);
