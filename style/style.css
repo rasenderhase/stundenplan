@@ -1,6 +1,19 @@
 body {
     font-family: sans-serif;
     box-sizing: border-box;
+    width: 880px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid white;
+    padding: 0.2em;
 }
 
 #template {
@@ -21,7 +34,6 @@ body {
 }
 
 .subject {
-    padding: 0.2em;
     text-align: center;
 }
 
@@ -46,6 +58,7 @@ body {
 }
 
 .sozialkunde {
+    color: white;
     background-color: blueviolet;
 }
 
@@ -59,11 +72,12 @@ body {
 }
 
 .bnt {
+    color: white;
     background-color: brown;
 }
 
-.schwimmen-bnt {
-    background-image: linear-gradient(0.25turn, deepskyblue, brown);
+.schwimmen {
+    background-color: deepskyblue;
 }
 
 .kl {
@@ -83,11 +97,21 @@ body {
 }
 
 .themen-angebot {
-    background-color: cyan;
+    background-color: cornsilk;
 }
 
 .klassenzeit {
     background-color: violet;
+}
+
+.kung-fu {
+    color: white;
+    background-color: black;
+}
+
+.ferien {
+    color: white;
+    background-color: gray;
 }
 
 .attribute {

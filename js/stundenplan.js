@@ -13,21 +13,43 @@ let stundenplan = {
             th.append(day);
             headRow.append(th);
         }
+    }, initSubject: function (subject, tr) {
+        let td = document.createElement("td");
+        let styleclass = subject.title.toLowerCase();
+        td.setAttribute("class", "subject " + styleclass);
+        td.append(subject.title);
+        if (subject.rowspan) {
+            td.setAttribute("rowspan", subject.rowspan);
+        }
+        tr.append(td);
+    }, initCalendar: function (subject, tr) {
+        let date = new Date();
+        date.setDate(date.getDate() + 1);   // show the next week on sunday
+        let cw = date.getWeek();
+        let found = false;
+        for (const calendar of subject.calendars) {
+            if (calendar.cw.includes(cw)) {
+                calendar.rowspan = subject.rowspan;
+                this.initSubject(calendar, tr);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            let s = {"title": "Ferien"};
+            s.rowspan = subject.rowspan;
+            this.initSubject(s, tr);
+        }
     }, initHour: function (json, i, tr) {
         for (let j = 0; j < json.days.length; j++) {
             if (json.timetable.length > i && json.timetable[i].length > j) {
                 let subject = json.timetable[i][j];
                 if (!subject) {
                     // skip because of rowspan
+                } else if (subject.type === "calendar") {
+                    this.initCalendar(subject, tr);
                 } else if (subject.title) {
-                    let td = document.createElement("td");
-                    let styleclass = subject.title.toLowerCase();
-                    td.setAttribute("class", "subject " + styleclass);
-                    td.append(subject.title);
-                    if (subject.rowspan) {
-                        td.setAttribute("rowspan", subject.rowspan);
-                    }
-                    tr.append(td);
+                    this.initSubject(subject, tr);
                 } else {
                     let td = document.createElement("td");
                     td.setAttribute("class", "break");
