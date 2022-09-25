@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     box-sizing: border-box;
-    width: 880px;
+    width: 800px;
     padding: 0;
     margin: 0 auto;
     background-color: lightgrey;
@@ -13,7 +13,7 @@ table {
 
 td {
     border: 1px solid white;
-    padding: 0.2em;
+    padding: 0.2em 0;
     text-align: center;
 }
 
