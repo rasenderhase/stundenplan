@@ -54,7 +54,7 @@ td {
     background-color: aqua;
 }
 
-.bk {
+.bk, .kunst {
     color: white;
     background-color: darkolivegreen;
 }
@@ -86,7 +86,7 @@ td {
     background-color: seagreen;
 }
 
-.x {
+.x, .ku {
     background-color: cornflowerblue;
 }
 

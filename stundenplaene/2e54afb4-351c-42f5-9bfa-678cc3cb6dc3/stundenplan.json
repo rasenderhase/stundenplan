@@ -227,17 +227,148 @@
       "17:45 - 18:45"
     ],
     "timetable": [
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [],
-      [{}, {
-        "title": "Kung-Fu"
-      }, {}, {}, {}]
+      [
+        {
+          "title": "KU"
+        },
+        {
+          "title": "KU"
+        },
+        {
+          "title": "Religion"
+        },
+        {
+          "title": "Musik"
+        },
+        {
+          "title": "KU"
+        }
+      ],
+      [
+        {
+          "title": "KU"
+        },
+        {
+          "title": "KU"
+        },
+        {
+          "title": "Religion"
+        },
+        {
+          "title": "Englisch"
+        },
+        {
+          "title": "KU"
+        }
+      ],
+      [
+        {
+          "title": "KU"
+        },
+        {
+          "title": "Perle"
+        },
+        {
+          "title": "KU"
+        },
+        {
+          "title": "KU"
+        },
+        {
+          "title": "KU"
+        },
+        {
+          "title": "KU"
+        }
+      ],
+      [
+        {
+          "title": "KU"
+        },
+        {
+          "title": "KU"
+        },
+        {
+          "title": "Englisch"
+        },
+        {
+          "title": "Perle"
+        },
+        {
+          "title": "KU"
+        }
+      ],
+      [
+        {
+          "title": "Perle"
+        },
+        {
+          "title": "Sport"
+        },
+        {
+          "title": "Perle"
+        },
+        {
+          "title": "KU"
+        },
+        {
+          "title": "Sport"
+        }
+      ],
+      [
+        {
+          "title": "KU"
+        },
+        {
+          "title": "Sport"
+        },
+        {
+
+        },
+        {
+          "title": "KU"
+        },
+        {}
+      ],
+      [
+        {
+          "title": "Themen-angebot"
+        },
+        {
+          "title": "Themen-angebot"
+        },
+        {
+          "title": "Klassenzeit"
+        },
+        {
+          "title": "Kunst"
+        },
+        {}
+      ],
+      [
+        {
+          "title": "Themen-angebot"
+        },
+        {
+          "title": "Themen-angebot"
+        },
+        {
+          "title": "Klassenzeit"
+        },
+        {
+          "title": "Kunst"
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "title": "Kung-Fu"
+        },
+        {},
+        {},
+        {}
+      ]
     ]
   },
   {
@@ -382,9 +513,15 @@
         null,
         {}
       ],
-      [{}, {}, {}, {}, {
-        "title": "Kung-Fu"
-      }]
+      [
+        {},
+        {},
+        {},
+        {},
+        {
+          "title": "Kung-Fu"
+        }
+      ]
     ]
   }
 ]
