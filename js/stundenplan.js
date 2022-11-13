@@ -1,7 +1,10 @@
+import "https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js";
+
 let stundenplan = {
     fetch: function (id) {
-        fetch("stundenplaene/" + id + "/stundenplan.json")
-            .then(response => response.json())
+        fetch("stundenplaene/" + id + "/stundenplan.yaml")
+            .then(response => response.text())
+            .then(text => jsyaml.load(text))
             .then(this.init.bind(this));
     },
 
@@ -15,9 +18,10 @@ let stundenplan = {
         }
     }, initSubject: function (subject, tr) {
         let td = document.createElement("td");
-        let styleclass = subject.title.toLowerCase();
+        let title = subject.title ? subject.title : subject;
+        let styleclass = title.toLowerCase();
         td.setAttribute("class", "subject " + styleclass);
-        td.append(subject.title);
+        td.append(title);
         if (subject.rowspan) {
             td.setAttribute("rowspan", subject.rowspan);
         }
@@ -48,7 +52,7 @@ let stundenplan = {
                     // skip because of rowspan
                 } else if (subject.type === "calendar") {
                     this.initCalendar(subject, tr);
-                } else if (subject.title) {
+                } else if (subject.title || typeof(subject) === "string") {
                     this.initSubject(subject, tr);
                 } else {
                     let td = document.createElement("td");
