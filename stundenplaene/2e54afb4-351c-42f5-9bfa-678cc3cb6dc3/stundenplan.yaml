@@ -25,17 +25,17 @@
     - 15:40 - 16:25
     - 17:45 - 18:45
   timetable:
-    - [ { title: Mathe, rowspan: 2 }, { title: Englisch, rowspan: 2 }, { title: Deutsch , rowspan: 2 }, { title: Musik,   rowspan: 2 }, { title: Geo,     rowspan: 2 } ]
-    - [ null,                         null,                            null,                            null,                           null ]
-    - [ { title: BK   , rowspan: 2 }, { title: Sport   , rowspan: 2 }, { title: Englisch, rowspan: 2 }, { title: Ethik,   rowspan: 2 }, { title: Deutsch, rowspan: 2 } ]
-    - [ null,                         null,                            null,                            null,                           null ]
-    - [ Englisch,                     Mathe,                           Klassenzeit,                     Englisch,                       { title: BNT,     rowspan: 2 } ]
-    - [ { },                          Sozialkunde,                     { },                             { },                            null ]
-    - [ { title: Sport, rowspan: 2 }, { },                             { },                             { type: calendar, rowspan: 2, calendars: [ { title: Schwimmen, cw: *A }, { title: BNT, cw: *B } ] }, { } ]
-    - [ null,                         { },                             { },                             null,                           { } ]
-    - [ { },                          { },                             { },                             Mathe,                          { } ]
+    - [ { title: BNT, rowspan: 2 }, { title: Musik,    rowspan: 2 }, { title: Deutsch , rowspan: 2 }, { title: BNT,     rowspan: 2 }, { title: BK,      rowspan: 2 } ]
+    - [ null,                         null,                            null,                            null,                         null ]
+    - [ { title: GEO, rowspan: 2 }, { title: Sport   , rowspan: 2 }, { title: Englisch, rowspan: 2 }, { title: Ethik,   rowspan: 2 }, { title: Deutsch, rowspan: 2 } ]
+    - [ null,                         null,                            null,                            null,                         null ]
+    - [ Englisch,                     Mathe,                           Klassenzeit,                     Englisch,                     { title: Musik,   rowspan: 2 } ]
+    - [ Mathe,                        Sozialkunde,                     { },                             Spüldienst,                   null ]
+    - [ { },                          { },                             { },                             { type: calendar, rowspan: 2, calendars: [ { title: Schwimmen, cw: *A }, { title: BNT, cw: *B } ] }, { } ]
+    - [ { },                          { title: Englisch, rowspan: 2 }, { title: Mathe, rowspan: 2 },    null,                           { } ]
+    - [ { },                          null,                            null,                            { },                            { } ]
     - [ { },                          { },                             { },                             { },                            { } ]
-    - [ { },                          { },                             { },                             Kung-Fu,                        { } ]
+    - [ { },                          Kung-Fu,                         Kung-Fu,                         { },                            { } ]
 - id: stundenplan-2
   name: Ben
   days:
@@ -53,17 +53,17 @@
     - 17:45 - 18:45
     - -18:45
   timetable:
-    - [ KU,             KU,                            Religion,    Musik,    KU ]
-    - [ KU,             KU,                            Religion,    Englisch, KU ]
-    - [ KU,             Perle,                         KU,          KU,       KU ]
-    - [ KU,             KU,                            Englisch,    Perle,    KU ]
-    - [ Perle,          Sport,                         Perle,       KU,       Sport ]
-    - [ KU,             Sport,                         { },         KU,       { } ]
-    - [ Themen-angebot, Themen-angebot,                Klassenzeit, Kunst,    { } ]
-    - [ Themen-angebot, Themen-angebot,                Klassenzeit, Kunst,    { } ]
-    - [ { },            { title: Zirkus, rowspan: 2 }, { },         { },      { } ]
-    - [ { },            null,                          { },         { },      { title: Kung-Fu, rowspan: 2 } ]
-    - [ { },            { } ,                          { },         { },      null ]
+    - [ KU,             KU,                            Religion,                       Musik,    KU ]
+    - [ KU,             KU,                            Religion,                       Englisch, KU ]
+    - [ KU,             Perle,                         KU,                             KU,       KU ]
+    - [ KU,             KU,                            Englisch,                       Perle,    KU ]
+    - [ Perle,          Sport,                         Perle,                          KU,       Sport ]
+    - [ KU,             Sport,                         { },                            KU,       { } ]
+    - [ Themen-angebot, Themen-angebot,                Klassenzeit,                    Kunst,    { } ]
+    - [ Themen-angebot, Themen-angebot,                Klassenzeit,                    Kunst,    { } ]
+    - [ { },            { title: Zirkus, rowspan: 2 }, { },                            { },      { } ]
+    - [ { },            null,                          { title: Kung-Fu, rowspan: 2 }, { },      { } ]
+    - [ { },            { } ,                          null,                           { },      { } ]
 - id: stundenplan-3
   name: Rea
   days:

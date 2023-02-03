@@ -102,9 +102,13 @@ td {
     background-color: violet;
 }
 
+.spüldienst {
+    background-image: linear-gradient(red, yellow);
+}
+
 .kung-fu {
     color: white;
-    background-color: black;
+    background-image: linear-gradient(to right, white, yellow, red, green, blue, purple, brown, black);
 }
 
 .ferien {
