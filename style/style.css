@@ -42,8 +42,12 @@ td {
     background-color: cornflowerblue;
 }
 
-.deutsch {
+.deutsch, .leseband {
     background-color: coral;
+}
+
+.d\/m {
+    background-image: linear-gradient(to right, coral, cornflowerblue);
 }
 
 .englisch {
@@ -59,7 +63,7 @@ td {
     background-color: darkolivegreen;
 }
 
-.sozialkunde {
+.sozialkunde, .klassenrat {
     color: white;
     background-color: blueviolet;
 }
@@ -73,7 +77,7 @@ td {
     background-color: darkmagenta;
 }
 
-.bnt {
+.bnt, .su {
     color: white;
     background-color: brown;
 }
@@ -86,7 +90,17 @@ td {
     background-color: seagreen;
 }
 
-.x, .ku {
+.geschichte, .g {
+    background-color: saddlebrown;
+    color: white;
+}
+
+.französisch, .franz, .italienisch {
+    background-color: darkblue;
+    color: white;
+}
+
+.x, .ku, .df, .kuckmal {
     background-color: cornflowerblue;
 }
 
@@ -113,7 +127,7 @@ td {
 
 .ferien {
     color: white;
-    background-color: gray;
+    background-color: grey;
 }
 
 .attribute {

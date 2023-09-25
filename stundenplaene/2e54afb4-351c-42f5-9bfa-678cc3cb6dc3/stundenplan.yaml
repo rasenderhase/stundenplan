@@ -1,10 +1,5 @@
 - id: stundenplan-1
   name: Tom
-  weeks:
-    - &A
-      [ 38, 40, 42, 45, 47, 49,  2, 4, 6, 9, 11, 13, 16, 18, 20, 24, 26, 28, 30 ]
-    - &B
-      [ 37, 39, 41, 43, 46, 48, 50, 3, 5, 7, 10, 12, 14, 17, 19, 21, 25, 27, 29 ]
   days:
     &days
     - Montag
@@ -25,17 +20,17 @@
     - 15:40 - 16:25
     - 17:45 - 18:45
   timetable:
-    - [ { title: BNT, rowspan: 2 }, { title: Musik,    rowspan: 2 }, { title: Deutsch , rowspan: 2 }, { title: BNT,     rowspan: 2 }, { title: BK,      rowspan: 2 } ]
-    - [ null,                         null,                            null,                            null,                         null ]
-    - [ { title: GEO, rowspan: 2 }, { title: Sport   , rowspan: 2 }, { title: Englisch, rowspan: 2 }, { title: Ethik,   rowspan: 2 }, { title: Deutsch, rowspan: 2 } ]
-    - [ null,                         null,                            null,                            null,                         null ]
-    - [ Englisch,                     Mathe,                           Klassenzeit,                     Englisch,                     { title: Musik,   rowspan: 2 } ]
-    - [ Mathe,                        Sozialkunde,                     { },                             Spüldienst,                   null ]
-    - [ { },                          { },                             { },                             { type: calendar, rowspan: 2, calendars: [ { title: Schwimmen, cw: *A }, { title: BNT, cw: *B } ] }, { } ]
-    - [ { },                          { title: Englisch, rowspan: 2 }, { title: Mathe, rowspan: 2 },    null,                           { } ]
-    - [ { },                          null,                            null,                            { },                            { } ]
-    - [ { },                          { },                             { },                             { },                            { } ]
-    - [ { },                          Kung-Fu,                         Kung-Fu,                         { },                            { } ]
+    - [ { title: Mathe, rowspan: 2 },      { title: BNT, rowspan: 2 },         { title: Deutsch , rowspan: 2 }, { title: Mathe, rowspan: 2 },      { title: Deutsch,      rowspan: 2 } ]
+    - [ null,                              null,                               null,                            null,                               null ]
+    - [ { title: Sport, rowspan: 2 },      { title: Franz,       rowspan: 2 }, { title: Englisch, rowspan: 2 }, { title: BK, rowspan: 2 },          { title: Englisch, rowspan: 2 } ]
+    - [ null,                              null,                               null,                            null,                               null ]
+    - [ { title: G,     rowspan: 2 },      Klassenzeit,                        Franz,                           { title: Ethik, rowspan: 2 },       { title: Musik,   rowspan: 2 } ]
+    - [ null,                              Spüldienst,                         { },                             null,                               null ]
+    - [ DF ,                               Geo,                                { },                             { },                                { } ]
+    - [ { },                               { title: Englisch, rowspan: 2 },    { title: Kuckmal, rowspan: 2 },  { title: Franz,       rowspan: 2 }, { } ]
+    - [ { },                               null,                               null,                            null,                               { } ]
+    - [ { },                               { },                                { },                             { },                                { } ]
+    - [ { },                               Kung-Fu,                            Kung-Fu,                         { },                                { } ]
 - id: stundenplan-2
   name: Ben
   days:
@@ -49,21 +44,17 @@
     - 12:30 - 13:15
     - 14:30 - 15:15
     - 15:15 - 16:00
-    - 17:30
     - 17:45 - 18:45
-    - -18:45
   timetable:
-    - [ KU,             KU,                            Religion,                       Musik,    KU ]
-    - [ KU,             KU,                            Religion,                       Englisch, KU ]
-    - [ KU,             Perle,                         KU,                             KU,       KU ]
-    - [ KU,             KU,                            Englisch,                       Perle,    KU ]
-    - [ Perle,          Sport,                         Perle,                          KU,       Sport ]
-    - [ KU,             Sport,                         { },                            KU,       { } ]
-    - [ Themen-angebot, Themen-angebot,                Klassenzeit,                    Kunst,    { } ]
-    - [ Themen-angebot, Themen-angebot,                Klassenzeit,                    Kunst,    { } ]
-    - [ { },            { title: Zirkus, rowspan: 2 }, { },                            { },      { } ]
-    - [ { },            null,                          { title: Kung-Fu, rowspan: 2 }, { },      { } ]
-    - [ { },            { } ,                          null,                           { },      { } ]
+    - [ Deutsch,        Religion,                      Deutsch,                Mathe,       Deutsch ]
+    - [ LB Mathe,       Religion,                      Sport,                  LB Deutsch,  Deutsch ]
+    - [ Deutsch,        Perle,                         SU,                     Perle,       SU ]
+    - [ D/M,            Mathe,                         Perle,                  Englisch,    SU ]
+    - [ Musik,          Mathe,                         Musik,                  Sport,       Perle ]
+    - [ Perle,          Englisch,                      { },                    Sport,       Klassenrat ]
+    - [ TA,             TA,                            Kunst,                  Klassenzeit, { } ]
+    - [ TA,             TA,                            Kunst,                  Klassenzeit, { } ]
+    - [ { },            Kung-Fu,                       Kung-Fu,                { },         { } ]
 - id: stundenplan-3
   name: Rea
   days:
@@ -77,18 +68,14 @@
     - 12:30 - 13:15
     - 14:30 - 15:15
     - 15:15 - 16:00
-    - 16:00
     - 16:30 - 17:15
-    - -17:30
   timetable:
-    - [ x,                            x,                                     x,                                     x,                                  { title: Sport, rowspan: 2 } ]
-    - [ Sport,                        x,                                     x,                                     x,                                  null ]
-    - [ x,                            x,                                     { title: Religion, rowspan: 2 },       x,                                  x ]
-    - [ x,                            x,                                     null,                                  x,                                  x ]
-    - [ x,                            Musik,                                 x,                                     Perle,                              x ]
-    - [ { },                          { },                                   Perle,                                 { },                                x ]
-    - [ { title: Perle, rowspan: 2 }, { title: Themen-angebot, rowspan: 2 }, { title: Themen-angebot, rowspan: 2 }, { title: Klassenzeit, rowspan: 2 }, { } ]
-    - [ null,                         null,                                  null,                                  null,                               { } ]
-    - [ { },                          { title: Zirkus, rowspan: 2 },         { },                                   { },                                { } ]
-    - [ { },                          null,                                  { },                                   { },                                { title: Kung-Fu, rowspan: 2 } ]
-    - [ { },                          { } ,                                  { },                                   { },                                null ]
+    - [ x,                            x,                                     x,                                     Musik,                              x ]
+    - [ Sport,                        Leseband,                              x,                                     x,                                  Leseband ]
+    - [ x,                            x,                                     Italienisch,                           x,                                  x ]
+    - [ x,                            x,                                     Italienisch,                           x,                                  x ]
+    - [ Perle,                        x,                                     Sport,                                 Perle,                              x ]
+    - [ { },                          { },                                   Sport,                                 { },                                x ]
+    - [ TA,                           Perle,                                 TA,                                    Klassenzeit, { } ]
+    - [ TA,                           Perle,                                 TA,                                    Klassenzeit,                               { } ]
+    - [ { },                          { },                                   { },                                   { },                                Kung-Fu ]
