@@ -38,11 +38,11 @@ td {
 
 }
 
-.mathe {
+.mathe, .lernband_m {
     background-color: cornflowerblue;
 }
 
-.deutsch, .leseband {
+.deutsch, .leseband, .lernband_d {
     background-color: coral;
 }
 
@@ -56,6 +56,7 @@ td {
 
 .sport, .zirkus {
     background-color: aqua;
+    border: 2px solid black;
 }
 
 .bk, .kunst {
@@ -63,7 +64,7 @@ td {
     background-color: darkolivegreen;
 }
 
-.sozialkunde, .klassenrat {
+.sozialkunde, .klassenrat, .physik {
     color: white;
     background-color: blueviolet;
 }
@@ -82,12 +83,17 @@ td {
     background-color: brown;
 }
 
-.schwimmen {
+.schwimmen, .tennis {
     background-color: deepskyblue;
+    border: 2px solid black;
 }
 
 .geo {
     background-color: seagreen;
+}
+
+.bio {
+    background-color: lightgreen;
 }
 
 .geschichte, .g {

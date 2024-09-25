@@ -18,43 +18,60 @@
     - 14:00 - 14:45
     - 14:50 - 15:35
     - 15:40 - 16:25
-    - 17:45 - 18:45
+    - 17:00 - 17:45
+    - 17:45 - 18:00
+    - 18:00 - 18:45
   timetable:
-    - [ { title: Mathe, rowspan: 2 },      { title: BNT, rowspan: 2 },         { title: Deutsch , rowspan: 2 }, { title: Mathe, rowspan: 2 },      { title: Deutsch,      rowspan: 2 } ]
+    - [ { title: G, rowspan: 2 },          { title: Englisch, rowspan: 2 },    { title: Sport , rowspan: 2 },   { title: Ethik, rowspan: 2 },       { title: BK, rowspan: 2 } ]
     - [ null,                              null,                               null,                            null,                               null ]
-    - [ { title: Sport, rowspan: 2 },      { title: Franz,       rowspan: 2 }, { title: Englisch, rowspan: 2 }, { title: BK, rowspan: 2 },          { title: Englisch, rowspan: 2 } ]
+    - [ { title: Deutsch, rowspan: 2 },    { title: Bio, rowspan: 2 },         { title: Musik, rowspan: 2 },    { title: Franz, rowspan: 2 },       { title: Sport, rowspan: 2 } ]
     - [ null,                              null,                               null,                            null,                               null ]
-    - [ { title: G,     rowspan: 2 },      Klassenzeit,                        Franz,                           { title: Ethik, rowspan: 2 },       { title: Musik,   rowspan: 2 } ]
-    - [ null,                              Spüldienst,                         { },                             null,                               null ]
-    - [ DF ,                               Geo,                                { },                             { },                                { } ]
-    - [ { },                               { title: Englisch, rowspan: 2 },    { title: Kuckmal, rowspan: 2 },  { title: Franz,       rowspan: 2 }, { } ]
-    - [ { },                               null,                               null,                            null,                               { } ]
+    - [ Klassenzeit,                       { title: Mathe, rowspan: 2 },       Deutsch,                         { title: Englisch, rowspan: 2 },    { title: Franz, rowspan: 2 } ]
+    - [ Spüldienst,                        null,                               { },                             null,                               null ]
+    - [ { title: Physik, rowspan: 2 } ,    { },                                { },                             { },                                { } ]
+    - [ null,                              { title: Geo, rowspan: 2 },         { title: Mathe, rowspan: 2 },    { },                                { } ]
+    - [ { },                               null,                               null,                            { },                                { } ]
     - [ { },                               { },                                { },                             { },                                { } ]
-    - [ { },                               Kung-Fu,                            Kung-Fu,                         { },                                { } ]
+    - [ { },                               { },                                { title: Tennis, rowspan: 2 },   { },                                { } ]
+    - [ { title: Kung-Fu, rowspan: 2 },    { },                                null,                            { },                                { } ]
+    - [ null,                              { },                                { },                             { },                                { } ]
 - id: stundenplan-2
   name: Ben
+  weeks:
+    - &A
+      [ 37, 39, 41, 43, 46, 48, 50, 2, 4, 6, 8, 11, 13, 15, 19, 21, 23, 27, 29, 31 ]
+    - &B
+      [ 38, 40, 42, 45, 47, 49, 51, 3, 5, 7, 9, 12, 14, 18, 20, 22, 26, 28, 30 ]
   days:
     *days
   times:
-    - 08:00 - 08:45
-    - 08:45 - 09:30
-    - 09:55 - 10:40
-    - 10:40 - 11:25
-    - 11:45 - 12:30
-    - 12:30 - 13:15
-    - 14:30 - 15:15
-    - 15:15 - 16:00
-    - 17:45 - 18:45
+    - 07:50 - 08:35
+    - 08:35 - 09:20
+    - 09:40 - 10:25
+    - 10:25 - 11:10
+    - 11:30 - 12:15
+    - 12:15 - 13:00
+    - 13:10 - 13:55
+    - 14:00 - 14:45
+    - 14:50 - 15:35
+    - 15:40 - 16:25
+    - 17:00 - 17:45
+    - 17:45 - 18:00
+    - 18:00 - 18:45
   timetable:
-    - [ Deutsch,        Religion,                      Deutsch,                Mathe,       Deutsch ]
-    - [ LB Mathe,       Religion,                      Sport,                  LB Deutsch,  Deutsch ]
-    - [ Deutsch,        Perle,                         SU,                     Perle,       SU ]
-    - [ D/M,            Mathe,                         Perle,                  Englisch,    SU ]
-    - [ Musik,          Mathe,                         Musik,                  Sport,       Perle ]
-    - [ Perle,          Englisch,                      { },                    Sport,       Klassenrat ]
-    - [ TA,             TA,                            Kunst,                  Klassenzeit, { } ]
-    - [ TA,             TA,                            Kunst,                  Klassenzeit, { } ]
-    - [ { },            Kung-Fu,                       Kung-Fu,                { },         { } ]
+    - [ { title: Mathe, rowspan: 2 },      { title: BNT, rowspan: 2 },         { title: Sport , rowspan: 2 },   { title: Englisch, rowspan: 2 },    { title: Ethik, rowspan: 2 } ]
+    - [ null,                              null,                               null,                            null,                               null ]
+    - [ { title: Geo, rowspan: 2 },        { title: BK, rowspan: 2 },          { title: Mathe, rowspan: 2 },    { title: BNT, rowspan: 2 },         { title: Deutsch, rowspan: 2 } ]
+    - [ null,                              null,                               null,                            null,                               null ]
+    - [ Englisch,                          Soz,                                Englisch,                        Musik,                              { type: calendar, rowspan: 2, calendars: [ { title: BNT, cw: *A }, { title: Schwimmen, cw: *B } ] }, { } ]
+    - [ Musik,                             Spüldienst,                         { },                             { },                                null ]
+    - [ { } ,                              Klassenzeit,                        { },                             Musik,                              { } ]
+    - [ { },                               { title: Englisch, rowspan: 2 },    { },                             { title: Deutsch, rowspan: 2 },     { } ]
+    - [ { },                               null,                               { },                             null,                               { } ]
+    - [ { },                               { },                                { },                             { },                                { } ]
+    - [ { },                               { },                                { },                             { },                                { } ]
+    - [ { title: Kung-Fu, rowspan: 2 },    { },                                { },                             { },                                { } ]
+    - [ null,                              { },                                { },                             { },                                { } ]
 - id: stundenplan-3
   name: Rea
   days:
@@ -68,14 +85,18 @@
     - 12:30 - 13:15
     - 14:30 - 15:15
     - 15:15 - 16:00
-    - 16:30 - 17:15
+    - 16:00 - 17:45
+    - 17:45 - 18:00
+    - 18:00 - 18:45
   timetable:
-    - [ x,                            x,                                     x,                                     Musik,                              x ]
-    - [ Sport,                        Leseband,                              x,                                     x,                                  Leseband ]
-    - [ x,                            x,                                     Italienisch,                           x,                                  x ]
-    - [ x,                            x,                                     Italienisch,                           x,                                  x ]
-    - [ Perle,                        x,                                     Sport,                                 Perle,                              x ]
-    - [ { },                          { },                                   Sport,                                 { },                                x ]
-    - [ TA,                           Perle,                                 TA,                                    Klassenzeit, { } ]
-    - [ TA,                           Perle,                                 TA,                                    Klassenzeit,                               { } ]
-    - [ { },                          { },                                   { },                                   { },                                Kung-Fu ]
+    - [ Mathe,                             Deutsch,                            Italienisch,                     Musik,                              Mathe ]
+    - [ Mathe,                             Deutsch,                            Italienisch,                     Deutsch,                            Englisch ]
+    - [ Kunst,                             Mathe,                              { title: Sport , rowspan: 2 },   Musik,                              SU ]
+    - [ Kunst,                             Mathe,                              null,                            Sport,                              Deutsch ]
+    - [ SU,                                Englisch,                           Lernband D,                      Deutsch,                            Lernband M ]
+    - [ Perle,                             Perle,                              Deutsch,                         { },                                SU ]
+    - [ TA,                                Klassenzeit,                        TA,                              Perle,                              { } ]
+    - [ TA,                                Klassenzeit,                        TA,                              Perle,                              { } ]
+    - [ { },                               { },                                { },                             { },                                { } ]
+    - [ { title: Kung-Fu, rowspan: 2 },    { },                                { },                             { },                                { } ]
+    - [ null,                              { },                                { },                             { },                                { } ]

@@ -19,7 +19,7 @@ let stundenplan = {
     }, initSubject: function (subject, tr) {
         let td = document.createElement("td");
         let title = subject.title ? subject.title : subject;
-        let styleclass = title.toLowerCase();
+        let styleclass = title.toLowerCase().replaceAll(" ", "_");
         td.setAttribute("class", "subject " + styleclass);
         td.append(title);
         if (subject.rowspan) {
