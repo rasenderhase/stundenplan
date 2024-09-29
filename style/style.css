@@ -69,7 +69,7 @@ td {
     background-color: blueviolet;
 }
 
-.musik {
+.musik, .orchester {
     background-color: lightpink;
 }
 
@@ -110,7 +110,7 @@ td {
     background-color: cornflowerblue;
 }
 
-.perle {
+.perle, .ha {
     background-color: orange;
 }
 
